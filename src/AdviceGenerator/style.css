@@ -1,0 +1,139 @@
+/* General styling for the advice container */
+.advice-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: hsl(218, 23%, 16%);
+  color: white;
+}
+
+/* Styling for the main advice box */
+.advice-box {
+  text-align: center;
+  padding: 20px;
+  background-color: hsl(218, 23%, 24%);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+/* Styling for the advice header */
+.advice-header {
+  font-size: 18px;
+  font-weight: 800;
+  color: hsl(150, 100%, 66%);
+}
+
+/* Styling for the advice description with quotes */
+.advice-description {
+  font-size: 28px;
+  margin: 20px 0;
+  quotes: '\201C' '\201D'; 
+}
+
+/* Additional styling for advice description */
+.advice-description {
+  font-size: 28px;
+  margin: 20px 0;
+  quotes: '\201C' '\201D'; 
+  white-space: pre-line; 
+  max-width: 400px;
+}
+
+/* Styling for the play/pause container */
+.play-pause-container {
+  width: 50%;
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+/* Styling for the line divider */
+.line-divider {
+  width: 100%; 
+  height: 1px; 
+  background-color: hsl(180, 0%, 55%);
+  margin: 10px auto; 
+}
+
+/* Styling for the play/pause button */
+.play-pause-button {
+  width: 40px; 
+  height: 40px;
+  position: relative;
+  cursor: pointer;
+}
+
+/* Styling for the play/pause button lines */
+.play-pause-button::before,
+.play-pause-button::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff; 
+  height: 20px; 
+  width: 2px; 
+}
+
+/* Styling for the play/pause button lines */
+.play-pause-button::before {
+  transform: translate(-50%, -50%) translateX(-5px); 
+}
+
+/* Styling for the play/pause button lines */
+.play-pause-button::after {
+  transform: translate(-50%, -50%) translateX(5px);
+}
+
+/* Styling for the playing icon */
+.playing-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 12px;
+  height: 24px;
+  background-color: transparent;
+}
+
+/* Styling for the playing icon lines */
+.playing-icon:before,
+.playing-icon:after {
+  content: '';
+  position: absolute;
+  width: 4px;
+  height: 24px;
+  background-color: hsl(150, 100%, 66%);
+}
+
+/* Styling for the playing icon lines */
+.playing-icon:before {
+  left: -8px;
+}
+
+/* Styling for the playing icon lines */
+.playing-icon:after {
+  right: -8px;
+}
+
+/* Styling for the dice icon */
+.dice-icon {
+  font-size: 24px;
+  color: hsl(150, 100%, 66%);
+  background-color: hsl(150, 100%, 66%);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  transition: box-shadow 0.3s;
+  cursor: pointer;
+}
+
+/* Styling for the dice icon on hover */
+.dice-icon:hover {
+  box-shadow: 0 0 20px 5px hsla(204, 38%, 80%, 0.5); 
+}
